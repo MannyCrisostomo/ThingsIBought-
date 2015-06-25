@@ -36,6 +36,9 @@ gem "font-awesome-rails", "~> 4.3"
 # Use Simple form
 gem "simple_form", "~> 3.1.0"
 
+# Use devise
+gem "devise", "~> 3.4.1"
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
