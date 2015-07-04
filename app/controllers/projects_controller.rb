@@ -11,16 +11,18 @@ class ProjectsController < ApplicationController
 	end
 	
 	def edit
+		authorize @project, :update?
 	end
 	
 	def update
-		if @project.update(project_params)
-			flash[:notice] = "Project has been updated."
-			redirect_to @project
-		else
-			flash.now[:alert] = "Project has not been updated."
-			render "edit"
-		end
+		authorize @project, :update?
+    if @project.update(project_params)
+      flash[:notice] = "Project has been updated."
+      redirect_to @project
+    else
+      flash.now[:alert] = "Project has not been updated."
+      render "edit"
+    end
 	end
 	
 
