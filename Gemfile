@@ -39,6 +39,9 @@ gem "simple_form", "~> 3.1.0"
 # Use devise
 gem "devise", "~> 3.4.1"
 
+# Use pundit
+gem "pundit", "~> 0.3.0"
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
