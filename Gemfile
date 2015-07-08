@@ -42,6 +42,9 @@ gem "devise", "~> 3.4.1"
 # Use pundit
 gem "pundit", "~> 0.3.0"
 
+# Use carrierewave
+gem "carrierwave", "~> 0.10.0"
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
