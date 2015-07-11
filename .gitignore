@@ -16,4 +16,4 @@
 /tmp
 
 # Ignore the speed.txt file
-public/uploads
+uploads
